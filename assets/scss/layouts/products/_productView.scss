@@ -31,7 +31,8 @@
 
     @media (min-width: 551px){
         &-top{
-            padding-bottom: 40px;
+            // padding-bottom: 40px;
+            padding-bottom: 0;
         }
     }
 }
@@ -136,6 +137,10 @@
         margin: auto;
         max-width: none;
         width: 100%;
+
+        @media (min-width: 1420px) {
+            height: 800px;
+        }
         @include lazy-loaded-padding('product_size');
 
         > a{
@@ -162,7 +167,7 @@
 
         img {
             position: absolute;
-            top: 50%;
+            top: 36%;
             left: 50%;
             display: inline-block;
             vertical-align: top;
