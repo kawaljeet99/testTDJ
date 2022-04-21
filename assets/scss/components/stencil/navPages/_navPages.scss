@@ -75,8 +75,8 @@
             font-size: $fontSize-root + 2px;
             font-weight: $fontWeight-normal;
             letter-spacing: $letterSpacing-base;
-            color: #e6e6e6;
-            // color: stencilColor('navPages-color');
+            // color: #e6e6e6;
+            color: stencilColor('navPages-color');
             padding: 10px 0;
             text-decoration: none;
             text-transform: uppercase;
@@ -101,12 +101,14 @@
             display: inline-block;
             vertical-align: top;
             color: stencilColor('header-text-color');
-            padding: 4px 0 20px 0;
+            // padding: 4px 0 20px 0;
+            padding: 4px 0 8px 0;
 
             .text{
                 display: inline-block;
                 vertical-align: top;
-                padding: 0 30px 8px 0;
+                // padding: 0 30px 8px 0;
+                padding: 0 0 8px 0;
             }
 
             .navPages-action-moreIcon{
@@ -199,8 +201,8 @@
 
             &:hover{
                 > .navPages-action{
-                    color: #ffffff;
-                    // color: stencilColor('navPages-color-hover');
+                    // color: #ffffff;
+                    color: stencilColor('navPages-color-hover');
                     
                     .text{
                         background-image: linear-gradient(transparent 97%, stencilColor('navPages-color-hover') 3%);

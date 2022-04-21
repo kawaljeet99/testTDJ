@@ -19,7 +19,8 @@
 .halo-top-bar-promotion{
     display: block;
     position: relative;
-    background-color: stencilColor('color-whiteBase');
+    background-color: stencilColor('color-black');
+    // background-color: stencilColor('global_style');
     text-align: center;
     padding: 5px 0;
     z-index: 20;
@@ -29,21 +30,26 @@
         font-weight: $fontWeight-semibold;
         line-height: 30px;
         letter-spacing: $letterSpacing-small;
-        color: $color-black;
+        color: $color-white;
         text-transform: uppercase;
         padding: 0;
         margin: 0;
+
+        @media (min-width: 551px){
+            letter-spacing: $letterSpacing-medium;
+        }
     }
 
     @media (min-width: 551px){
-        padding-top: 8px;
-        padding-bottom: 8px;
+        // padding-top: 8px;
+        // padding-bottom: 8px;
+        padding: 0;
     }
 }
 
 .header {
-    background-color: #aa906b;
-    // background-color: $header-bg;
+    // background-color: #aa906b;
+    background-color: $header-bg;
     position: relative;
     z-index: 99;
     border-bottom: 1px solid #f5f5f5;
@@ -131,7 +137,8 @@
             font-weight: $fontWeight-normal;
             letter-spacing: $letterSpacing-base;
             line-height: 40px;
-            color: $header-color;
+            // color: $header-color;
+            color: stencilColor('navPages-color');
             text-transform: none;
             transition: unset;
 
@@ -367,7 +374,8 @@
             svg{
                 width: 25px;
                 height: 25px;
-                fill: stencilColor('global_style');
+                // fill: stencilColor('global_style');
+                fill: stencilColor('icon-color');
                 margin: 0;
                 transition: unset;
             }
@@ -523,7 +531,7 @@
         &-image{
             max-height: none;
             width: auto;
-            height: 70px;
+            height: 80px;
         }
 
         &-image-unknown-size{
@@ -598,7 +606,8 @@
                 svg{
                     width: 25px;
                     height: 25px;
-                    fill: stencilColor('global_style');
+                    // fill: stencilColor('global_style');
+                    fill: stencilColor('icon-color');
                     margin: 0;
                 }
             }
@@ -656,7 +665,7 @@
     .mobileMenu-toggleIcon::before,
     .mobileMenu-toggleIcon::after {
         content: "";
-        background: stencilColor('global_style');
+        background: stencilColor('icon-color');
         display: block;
         height: 2px;
         width: 100%;
@@ -730,7 +739,8 @@
     @media (min-width: 1025px){
         &.is-sticky{
             z-index: 99;
-            background-color: #aa906b;
+            // background-color: #aa906b;
+            background-color: stencilColor('color-white');
 
             .halo-middleHeader{
                 display: none;
@@ -744,7 +754,7 @@
 
                         .text{
                             padding-top: 0;
-                            color: #ffffff;
+                            color: $color-black;
                         }
                     }
                 }
